@@ -1,0 +1,11 @@
+Challenges:
+
+1.  problem: SYNCHRONIZATION 
+    solution: used implicit wait,explicit wait and custom wait in base calss.
+2.  problem: framework configuration
+    solution: used google
+3.  problem: framework integration with GIT & Maven.
+    solution: maven updation 
+4.  Handling git conflict is challenging.
+5.  Handling  pop ups .
+6.  Development of Framework.

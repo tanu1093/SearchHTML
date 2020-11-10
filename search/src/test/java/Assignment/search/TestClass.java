@@ -1,9 +1,10 @@
 package Assignment.search;
 
+import org.testng.annotations.Parameters;
+import org.testng.annotations.Test;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
-import org.testng.annotations.Test;
 
 
 import pages.SearchPage;
@@ -12,7 +13,8 @@ public class TestClass extends Base
 {
 	//public WebDriver driver;
 	@Test
-	public void practice()
+	@Parameters({"browser"})
+	public void practice(String browser)
 	{
 		browser("chrome");
 	   driver.get(AutoConstants.URL);
