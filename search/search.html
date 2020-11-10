@@ -1,0 +1,56 @@
+<html>
+<head>
+<title> search </title>
+</head>
+<body>
+<label> Search Term </label>
+<input type="text" id="search12" value=""/>
+<br>
+<label> Search Content </label>
+<input type="text" id="search102" value=""/>
+<br>
+
+<input type="button"  value="Find" id="123" onclick="myalert()"</input>
+
+ <script> 
+        			
+					function myalert() { 
+					 var tf1 =  
+                document.getElementById("search12").value;
+					var tf2 =  
+                document.getElementById("search102").value;
+            				alert(tf1+' '+countString(tf2, tf1)+' times ocuured'); 
+        			} 
+
+				function countString(str, letter) {
+   				 let count = 0;
+
+    				if(letter.length<=1){
+   				 for (let i = 0; i < str.length; i++) {
+
+       					
+
+        					if (str.charAt(i) == letter) {
+          					  count += 1;
+       									 	}
+   									 }
+						}
+					else{
+						var res=str.split(" ");
+						for(let i=0;i<str.length;i++){
+						
+							if(res[i]==letter){
+							count += 1 ;	
+							}
+						}
+						}
+				
+    					return count;
+			}
+    			</script>
+</body>
+</html>
+
+
+
+
